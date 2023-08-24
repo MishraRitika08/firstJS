@@ -6,9 +6,9 @@
 }
 :root{
     --primary-text-color:rgb(243, 248, 255);
-    --secondary-text-color:rgb(22, 159, 244);
-    --accent-color:blue;
-    --accent-color-dark:rgb(37, 0, 137);    
+    --secondary-text-color:rgb(128, 247, 255);
+    --accent-color:rgb(97, 166, 161);
+    --accent-color-dark:rgb(37, 108, 120);    
 }
 body{
     color:var(
@@ -55,5 +55,40 @@ nav{
     height: 100px;
 }
 .nav_links ul{
-    gap: 16px;
+    gap: 30px;
+}
+.hover_link{
+    cursor:pointer;
+}
+.hover_link:hover{
+    color:var(--secondary-text-color);
+}
+.hover_link:active{
+color: rgb(247, 5, 37);
+}
+.search_bar{
+    height: 35px;
+    gap: 10px;
+}
+.news_input{
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.search_button{
+    background-color: var(--accent-color);
+    color: #000000;
+    padding:8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.search_button:hover{
+    background-color: var(--accent-color-dark);
 }
