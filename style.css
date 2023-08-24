@@ -1,0 +1,59 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+:root{
+    --primary-text-color:rgb(243, 248, 255);
+    --secondary-text-color:rgb(22, 159, 244);
+    --accent-color:blue;
+    --accent-color-dark:rgb(37, 0, 137);    
+}
+body{
+    color:var(
+        --primary-text-color
+    );
+    font-weight: 600;
+}
+p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.container{
+    max-width: 1100px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+nav{
+    background-color: #000000;
+    box-shadow: 0 0 0 4px #bbd0e2;
+    position: fixed;
+    top:0;
+    z-index: 99;
+    left:0;
+    right: 0;
+}
+.main_nav{
+    justify-content: space-between;
+    padding-block: 8px;
+}
+.logo{
+    width:150px;
+    height: 100px;
+}
+.nav_links ul{
+    gap: 16px;
+}
