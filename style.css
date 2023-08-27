@@ -5,9 +5,9 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 :root{
-    --primary-text-color:rgb(243, 248, 255);
+    --primary-text-color:rgb(11, 25, 45);
     --secondary-text-color:rgb(128, 247, 255);
-    --accent-color:rgb(97, 166, 161);
+    --accent-color:rgb(87, 148, 144);
     --accent-color-dark:rgb(37, 108, 120);    
 }
 body{
@@ -91,4 +91,40 @@ color: rgb(247, 5, 37);
 }
 .search_button:hover{
     background-color: var(--accent-color-dark);
+}
+main{
+    padding-block: 20px;
+    margin-top: 80px;
+}
+.cards_container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+.card{
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    cursor: pointer;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.card:hover{
+    box-shadow: 1px 1px 8px #d4ecff ;
+    transform:translate(-2px);
+}
+.card_header{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+
+}
+.card_content{
+    padding: 12px;
+
+}
+.newsSource{
+    margin-block: 12px;
 }
