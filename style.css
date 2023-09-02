@@ -22,6 +22,9 @@ p{
     color: var(--secondary-text-color);
     line-height: 1.4rem;
 }
+/**navbar **/
+
+
 a{
     text-decoration: none;
 }
@@ -39,7 +42,7 @@ ul{
 }
 
 nav{
-    background-color: #ffffff;
+    background-color: #f3faff;
     box-shadow: 0 0 0 4px #bbd0e2;
     position: fixed;
     top:0;
@@ -51,10 +54,13 @@ nav{
     justify-content: space-between;
     padding-block: 8px;
 }
+
 .logo{
-    width:150px;
-    height: 100px;
+    width:160px;
+    height: 70px;
 }
+
+/**links**/
 .nav_links ul{
     gap: 30px;
 }
@@ -67,6 +73,13 @@ nav{
 .hover_link:active{
 color: rgb(247, 5, 37);
 }
+.nav-items:active{
+    color: var(--accent-color);
+}
+
+/**search bar***/
+
+
 .search_bar{
     height: 35px;
     gap: 10px;
@@ -76,15 +89,15 @@ color: rgb(247, 5, 37);
     height: 100%;
     padding-inline: 12px;
     border-radius: 4px;
-    border: 2px solid black;
+    border: 2px solid #bbd0e2;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 .search_button{
     background-color: var(--accent-color);
-    color: #000000;
+    color: white;
     padding:8px 24px;
-    border: none;
+    border:none;
     border-radius: 4px;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
@@ -93,11 +106,12 @@ color: rgb(247, 5, 37);
 .search_button:hover{
     background-color: var(--accent-color-dark);
 }
+/**navbar done---------------------------------------**/
 main{
     padding-block: 20px;
     margin-top: 80px;
 }
-.cards_container{
+.cards-container{
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 20px;
@@ -116,13 +130,12 @@ main{
     box-shadow: 1px 1px 8px #d4ecff ;
     transform:translate(-2px);
 }
-.card_header{
+.card-header img{
     width: 100%;
     height: 180px;
     object-fit: cover;
-
 }
-.card_content{
+.card-content{
     padding: 12px;
 
 }
